@@ -9,9 +9,14 @@ import UIKit
 
 class TabCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    private func configureCell(_ title: String) {
+        self.title.text = title
     }
 
 }
