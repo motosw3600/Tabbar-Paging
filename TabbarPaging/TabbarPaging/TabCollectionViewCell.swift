@@ -9,13 +9,24 @@ import UIKit
 
 class TabCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var title: UILabel!
+    static let identifier = "TabCollectionViewCell"
+    @IBOutlet private weak var title: UILabel!
+    
+    override var isSelected: Bool {
+        willSet {
+            self.title.textColor = newValue ? .black : .lightGray
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    private func configureCell(_ title: String) {
+    override func prepareForReuse() {
+        isSelected = false
+    }
+    
+    func configureCell(_ title: String) {
         self.title.text = title
     }
 

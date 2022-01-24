@@ -8,10 +8,13 @@
 import UIKit
 
 class MenuCollectionViewCell: UICollectionViewCell {
+    static let identier = "MenuCollectionViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    func configureCell(color: UIColor) {
+        self.backgroundColor = color
+    }
 }
