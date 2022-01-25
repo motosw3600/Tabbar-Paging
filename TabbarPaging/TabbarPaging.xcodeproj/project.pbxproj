@@ -15,8 +15,8 @@
 		E99B905C279BDA9500A4D870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99B905A279BDA9500A4D870 /* LaunchScreen.storyboard */; };
 		E9F7E80C279D2B78007AA985 /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7E80A279D2B78007AA985 /* TabCollectionViewCell.swift */; };
 		E9F7E80D279D2B78007AA985 /* TabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F7E80B279D2B78007AA985 /* TabCollectionViewCell.xib */; };
-		E9F7E812279D2BDF007AA985 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7E810279D2BDF007AA985 /* MenuCollectionViewCell.swift */; };
-		E9F7E813279D2BDF007AA985 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F7E811279D2BDF007AA985 /* MenuCollectionViewCell.xib */; };
+		E9F7E812279D2BDF007AA985 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F7E810279D2BDF007AA985 /* PageCollectionViewCell.swift */; };
+		E9F7E813279D2BDF007AA985 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F7E811279D2BDF007AA985 /* PageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		E99B905D279BDA9500A4D870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F7E80A279D2B78007AA985 /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9F7E80B279D2B78007AA985 /* TabCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabCollectionViewCell.xib; sourceTree = "<group>"; };
-		E9F7E810279D2BDF007AA985 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		E9F7E811279D2BDF007AA985 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		E9F7E810279D2BDF007AA985 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9F7E811279D2BDF007AA985 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 				E99B9053279BDA9300A4D870 /* ViewController.swift */,
 				E9F7E80A279D2B78007AA985 /* TabCollectionViewCell.swift */,
 				E9F7E80B279D2B78007AA985 /* TabCollectionViewCell.xib */,
-				E9F7E810279D2BDF007AA985 /* MenuCollectionViewCell.swift */,
-				E9F7E811279D2BDF007AA985 /* MenuCollectionViewCell.xib */,
+				E9F7E810279D2BDF007AA985 /* PageCollectionViewCell.swift */,
+				E9F7E811279D2BDF007AA985 /* PageCollectionViewCell.xib */,
 			);
 			path = TabbarPaging;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			files = (
 				E9F7E80D279D2B78007AA985 /* TabCollectionViewCell.xib in Resources */,
 				E99B905C279BDA9500A4D870 /* LaunchScreen.storyboard in Resources */,
-				E9F7E813279D2BDF007AA985 /* MenuCollectionViewCell.xib in Resources */,
+				E9F7E813279D2BDF007AA985 /* PageCollectionViewCell.xib in Resources */,
 				E99B9059279BDA9500A4D870 /* Assets.xcassets in Resources */,
 				E99B9057279BDA9300A4D870 /* Main.storyboard in Resources */,
 			);
@@ -172,7 +172,7 @@
 				E99B9054279BDA9300A4D870 /* ViewController.swift in Sources */,
 				E99B9050279BDA9300A4D870 /* AppDelegate.swift in Sources */,
 				E99B9052279BDA9300A4D870 /* SceneDelegate.swift in Sources */,
-				E9F7E812279D2BDF007AA985 /* MenuCollectionViewCell.swift in Sources */,
+				E9F7E812279D2BDF007AA985 /* PageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
