@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         return collectionView
     }()
     
-    private let hightlightView: UIView = {
+    private let highlightView: UIView = {
         let view = UIView()
         view.backgroundColor = .darkGray
         return view
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     private func configureLayout() {
         view.addSubview(tapBarCollectionView)
-        view.addSubview(hightlightView)
+        view.addSubview(highlightView)
         view.addSubview(pageCollectionView)
         
         tapBarCollectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -66,18 +66,18 @@ class ViewController: UIViewController {
         tapBarCollectionView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         tapBarCollectionView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
-        hightlightView.translatesAutoresizingMaskIntoConstraints = false
+        highlightView.translatesAutoresizingMaskIntoConstraints = false
         constraints = [
-            hightlightView.topAnchor.constraint(equalTo: tapBarCollectionView.bottomAnchor),
-            hightlightView.bottomAnchor.constraint(equalTo: pageCollectionView.topAnchor),
-            hightlightView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
-            hightlightView.heightAnchor.constraint(equalToConstant: 1),
-            hightlightView.widthAnchor.constraint(equalToConstant: 80)
+            highlightView.topAnchor.constraint(equalTo: tapBarCollectionView.bottomAnchor),
+            highlightView.bottomAnchor.constraint(equalTo: pageCollectionView.topAnchor),
+            highlightView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+            highlightView.heightAnchor.constraint(equalToConstant: 1),
+            highlightView.widthAnchor.constraint(equalToConstant: 80)
         ]
         NSLayoutConstraint.activate(constraints)
 
         pageCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        pageCollectionView.topAnchor.constraint(equalTo: hightlightView.bottomAnchor).isActive = true
+        pageCollectionView.topAnchor.constraint(equalTo: highlightView.bottomAnchor).isActive = true
         pageCollectionView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         pageCollectionView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         pageCollectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -125,13 +125,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             guard let cell = tapBarCollectionView.cellForItem(at: indexPath) as? TabCollectionViewCell else { return }
             
             NSLayoutConstraint.deactivate(constraints)
-            hightlightView.translatesAutoresizingMaskIntoConstraints = false
+            highlightView.translatesAutoresizingMaskIntoConstraints = false
             constraints = [
-                hightlightView.topAnchor.constraint(equalTo: tapBarCollectionView.bottomAnchor),
-                hightlightView.bottomAnchor.constraint(equalTo: pageCollectionView.topAnchor),
-                hightlightView.heightAnchor.constraint(equalToConstant: 1),
-                hightlightView.leadingAnchor.constraint(equalTo: cell.leadingAnchor),
-                hightlightView.trailingAnchor.constraint(equalTo: cell.trailingAnchor)
+                highlightView.topAnchor.constraint(equalTo: tapBarCollectionView.bottomAnchor),
+                highlightView.bottomAnchor.constraint(equalTo: pageCollectionView.topAnchor),
+                highlightView.heightAnchor.constraint(equalToConstant: 1),
+                highlightView.leadingAnchor.constraint(equalTo: cell.leadingAnchor),
+                highlightView.trailingAnchor.constraint(equalTo: cell.trailingAnchor)
             ]
             NSLayoutConstraint.activate(constraints)
 
